@@ -1,4 +1,4 @@
-package com.techelevator.exercises.m1_java_command_program_exercises;
+package com.techelevator.exercises;
 
 /*
  The foot to meter conversion formula is:
