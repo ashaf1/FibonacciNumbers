@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
 Write a command line program which accepts a series of decimal integer values as command line arguments, 

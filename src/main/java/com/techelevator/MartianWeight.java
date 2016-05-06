@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
  In case you've ever pondered how much you weight on Mars, here's the calculation:

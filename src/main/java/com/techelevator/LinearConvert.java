@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
  The foot to meter conversion formula is:

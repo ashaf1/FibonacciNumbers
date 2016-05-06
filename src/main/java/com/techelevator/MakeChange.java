@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
  Write a command line program which prompts the user for the total bill, and the amount tendered. It should then display the change required.

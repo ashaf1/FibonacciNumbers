@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
  The Fahrenheit to Celsius conversion formula is:

@@ -1,4 +1,4 @@
-package com.techelevator.exercises;
+package com.techelevator;
 
 /*
  The Fibonacci numbers are the integers in the following sequence:  
