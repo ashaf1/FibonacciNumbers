@@ -12,9 +12,24 @@ package com.techelevator;
  0, 1, 1, 2, 3, 5, 8, 13, 21
  */
 public class Fibonacci {
-
+	
 	public static void main(String[] args) {
-
+		long fibEnd = Integer.parseInt(args[0]);
+		long fibFirst = 0;
+		long fibNext = 1;
+		long fibNum = 0;
+		System.out.print(fibFirst + " " + fibNext);
+		
+		for(fibNum = 0; fibNum <= fibEnd; fibNum++){
+			fibNum = fibFirst + fibNext;
+			fibFirst = fibNext;
+			
+			fibNext = fibNum;
+			
+			if (fibNum <= fibEnd)
+			System.out.print(" " + fibNum);
+		 } 
+	   System.out.println();
 	}
 
 }

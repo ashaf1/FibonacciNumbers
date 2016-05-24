@@ -12,9 +12,12 @@ $ DecimalToBinary 460 8218 1 31313 987654321
 987654321 in binary is 111010110111100110100010110001
 */
 public class DecimalToBinary {
-
 	public static void main(String[] args) {
-
+		for(int i = 0; i < args.length; i++){
+			int decValue = Integer.parseInt(args[i]);
+			
+		}
+			
 	}
 
 }
