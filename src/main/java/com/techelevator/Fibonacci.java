@@ -14,21 +14,35 @@ package com.techelevator;
 public class Fibonacci {
 	
 	public static void main(String[] args) {
-		long fibEnd = Integer.parseInt(args[0]);
-		long fibFirst = 0;
-		long fibNext = 1;
-		long fibNum = 0;
-		System.out.print(fibFirst + " " + fibNext);
+//		Takes number in command line prompt and converts from string to a long (I use 'long' just 
+//		to be able to use larger numbers)	
+		long fibEnd = Long.parseLong(args[0]);
+//		First number in fibonacci sequence and the lesser of the two addends in finding the next fib number.
+		long fibFirstAddend = 0;
+
+//		Next number in fibonacci sequence and greater of the two addends in finding the next fib number.
+		long fibNextAddend = 1;
 		
+//		Current fibonacci number
+		long fibNum = 0;
+		
+//		Prints out 0 1 each time Fibonacci.java is run
+		System.out.print(fibFirstAddend + " " + fibNextAddend);
+		
+//		Loop iterates until current fibonacci number <= max number (fibEnd) set by user in command line. 		
 		for(fibNum = 0; fibNum <= fibEnd; fibNum++){
-			fibNum = fibFirst + fibNext;
-			fibFirst = fibNext;
+//			Assigns value of current fibonacci number to equal the sum of previous iteration's addends.
+			fibNum = fibFirstAddend + fibNextAddend;
+//			First addend for next iteration is assigned the value from most recent iteration's next addend.
+			fibFirstAddend = fibNextAddend;
+//			Current fibonacci number becomes second addend for next iteration.
+			fibNextAddend = fibNum;
 			
-			fibNext = fibNum;
-			
+//			Prints the fibonacci number if it is less than or equal to the max fib number set by user in command line.
 			if (fibNum <= fibEnd)
 			System.out.print(" " + fibNum);
 		 } 
+//		prints a line for aesthetic purposes in command line
 	   System.out.println();
 	}
 
